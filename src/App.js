@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.module.scss";
+import BaseLayout from "./components/BaseLayout";
+import { BrowserRouter } from "react-router-dom";
+import Favicon from "react-favicon";
+import Overlay from "./components/Overlay";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			showOverlay: true,
+		};
+	}
+
+	handleShowOverlay = () => {
+		this.setState({ showOverlay: false });
+	};
+
+	componentDidMount() {
+		this.autoshowOverlay = setTimeout(
+			function () {
+				this.handleShowOverlay();
+			}.bind(this),
+			3000
+		);
+	}
+
+	render() {
+		return (
+			<div>
+				<Overlay active={this.state.showOverlay} marginTop='150px'>
+					<Favicon url='https://res.cloudinary.com/codelikeagirl29/image/upload/v1661995914/icons/favicon_c9hk5n.ico'></Favicon>
+					<BrowserRouter>
+						<BaseLayout />
+					</BrowserRouter>
+				</Overlay>
+			</div>
+		);
+	}
 }
-
-export default App;
