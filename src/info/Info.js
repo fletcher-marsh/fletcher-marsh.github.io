@@ -13,18 +13,22 @@ export const info = {
     miniBio: [
         {
             emoji: '📫',
-            text: 'fletcher.r.marsh@gmail.com'
+            display: 'fletcher.r.marsh@gmail.com',
+            text: 'mailto:fletcher.r.marsh@gmail.com'
         },
         {
             emoji: '☎️',
-            text: '(646) 326-7205'
+            display: '(646) 326-7205',
+            text: 'tel:(646) 326-7205'
         },
         {
             emoji: '🧑🏼‍💻',
+            display: 'github.com/fletcher-marsh/',
             text: 'https://github.com/fletcher-marsh/'
         },
         {
             emoji: '👥',
+            display: 'linkedin.com/in/fletcher-marsh-151120/',
             text: 'https://www.linkedin.com/in/fletcher-marsh-151120/'
         }
     ],
