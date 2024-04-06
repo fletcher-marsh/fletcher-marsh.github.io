@@ -30,7 +30,7 @@ export default class App extends React.Component {
 		return (
 			<div>
 				<Overlay active={this.state.showOverlay} marginTop='150px'>
-					<Favicon url='public/favicon.ico'></Favicon>
+					<Favicon url='favicon.ico'></Favicon>
 					<BrowserRouter>
 						<BaseLayout />
 					</BrowserRouter>
