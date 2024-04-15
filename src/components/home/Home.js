@@ -30,6 +30,8 @@ export default function Home() {
                ))}
             </Box>
          </Box>
+
+         <a href="/special_cait" style={{position: 'fixed', right: '20px', bottom: '50px'}}>👔</a>
       </Box>
    )
 }

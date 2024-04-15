@@ -71,7 +71,7 @@ textarea{
 
 button{
     background: #2f4ad0;
-    @include bm($bm-pd: 8px 16px, $bm-mg: 16px 0 50px 0);
+    @include bm($bm-pd: 8px 16px, $bm-mg: 16px 42%);
     @include tf(#fff);
     border: none;
     @include other($ot-br: 4px, $ot-cr: pointer, $ot-bs: $o-b);
