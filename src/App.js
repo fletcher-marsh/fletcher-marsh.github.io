@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.module.scss";
 import BaseLayout from "./components/BaseLayout";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Favicon from "react-favicon";
 import Overlay from "./components/Overlay";
 
@@ -31,9 +31,9 @@ export default class App extends React.Component {
 			<div>
 				<Overlay active={this.state.showOverlay} marginTop='150px'>
 					<Favicon url='favicon.ico'></Favicon>
-					<BrowserRouter>
+					<HashRouter>
 						<BaseLayout />
-					</BrowserRouter>
+					</HashRouter>
 				</Overlay>
 			</div>
 		);

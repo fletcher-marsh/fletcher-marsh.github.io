@@ -21,11 +21,6 @@ import {Box} from "@mui/material";
 //         to: '/portfolio',
 //         active: 'portfolio'
 //     },
-//       {
-//         name: 'Contact',
-//         to: '/contact',
-//         active: 'contact'
-//     },
 // ]
 
 export default function Navbar({darkMode, handleClick}) {

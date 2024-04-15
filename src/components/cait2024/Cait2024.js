@@ -26,12 +26,12 @@ const Cait2024 = () => {
 			const answer_cleaned = answer.toLowerCase().replace(/\s/g, '');
 			const hashed = SHA256(answer_cleaned.toLowerCase());
 			for (const aa of ACCEPTABLE_ANSWERS) {
-				if (hashed == aa) {
+				if (hashed === aa) {
 					setFoundDaAnswer(true);
 				}
 			}
 	};
-
+	console.log("SHOULD JKLASDF");
 	if (foundDaAnswer) {
 		return (
 			<Grid container item style={{ padding: "8%" }} spacing={2}>
@@ -56,35 +56,40 @@ const Cait2024 = () => {
 
 	return (
 		<Box>
-			<Grid container item justifyContent={"center"} spacing={2}>
+			<Grid container item justifyContent={"center"} style={{ padding: "2%" }}>
 				<Grid item xs={2}>
 					<img
 					src="https://www.ties.com/assets/img/how-to-tie-a-tie/thumbs/four-in-hand-knot.jpg"
 					style={{ maxWidth: "100%" }}
+					alt="hmm"
 					/>
 				</Grid>
 				<Grid item xs={2}>
 					<img
 					src="https://img.uline.com/is/image/uline/S-566Y?$Mobile_SI$"
 					style={{ maxWidth: "100%" }}
+					alt="wut dis"
 					/>
 				</Grid>
 				<Grid item xs={2}>
 					<img
 					src="https://sarahmaker.com/wp-content/uploads/2022/03/keep-tie-dye-from-fading-819x1024.jpg"
 					style={{ maxWidth: "100%" }}
+					alt="isnt this curious"
 					/>
 				</Grid>
 				<Grid item xs={2}>
 					<img
 					src="https://miro.medium.com/v2/resize:fit:2988/1*2setn808TbYPX7C1oPhvWg.png"
 					style={{ maxWidth: "100%" }}
+					alt="wonder what it could be"
 					/>
 				</Grid>
 				<Grid item xs={2}>
 					<img
 					src="https://cdn.britannica.com/47/18447-050-2C5E2037/Tai-Chi-chuan-practitioner.jpg"
 					style={{ maxWidth: "100%" }}
+					alt="seems like a challenging puzzle"
 					/>
 				</Grid>
 			</Grid>
@@ -94,18 +99,21 @@ const Cait2024 = () => {
 					<img
 					src="https://www.health.com/thmb/K_Vtfnh3Yu-Ceya3aETxfH72k9Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1175433234-034014dc5b9c45edaeaf04c7b80ceafc.jpg"
 					style={{ maxWidth: "100%" }}
+					alt="ouch oof ouch"
 					/>
 				</Grid>
 				<Grid item xs={2}>
 					<img
 					src="https://www.spectator.co.uk/wp-content/uploads/2021/03/Ampersand-Alamy.jpg?w=730"
 					style={{ maxWidth: "100%" }}
+					alt="or?"
 					/>
 				</Grid>
 				<Grid item xs={2}>
 					<img
 					src="https://thedinnerdaily.com/wp-content/uploads/2015/09/homepagedinner-scaled.jpg"
 					style={{ maxWidth: "100%" }}
+					alt="nom"
 					/>
 				</Grid>
 			</Grid>
