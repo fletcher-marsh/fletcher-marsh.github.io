@@ -56,7 +56,7 @@ const Cait2024 = () => {
 
 	return (
 		<Box>
-			<Grid container item justifyContent={"center"} style={{ padding: "2%" }}>
+			<Grid container item justifyContent={"center"} style={{ marginTop: "2%" }} spacing={1}>
 				<Grid item xs={2}>
 					<img
 					src="https://www.ties.com/assets/img/how-to-tie-a-tie/thumbs/four-in-hand-knot.jpg"
@@ -93,7 +93,7 @@ const Cait2024 = () => {
 					/>
 				</Grid>
 			</Grid>
-			<Grid container item justifyContent={"center"} spacing={2}>
+			<Grid container item justifyContent={"center"} style={{ marginTop: "1%" }} spacing={2}>
 				<Grid item xs={12} style={{ margin: '10px', backgroundColor: '#2f4ad0' }}></Grid>
 				<Grid item xs={2}>
 					<img
